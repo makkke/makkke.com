@@ -24,13 +24,8 @@
 /* http://bourbon.io/ Sass Mixin Library */
 /* custom CSS files */
 @import url(font-awesome.min.css);
-@import url(ionicons.min.css);
 @import url(bootstrap.min.css);
 @import url(animate.css);
-@import url(photoswipe.css);
-@import url(default-skin/default-skin.css);
-@import url(jquery.mCustomScrollbar.css);
-@import url(vegas.css);
 /* Google Fonts */
 @import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
