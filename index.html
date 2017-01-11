@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>Makkke</title>
+        <meta name="description" content="Makkke.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Makkke">
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+
+	<body onload="start()" onresize="resize()" onorientationchange="resize()">
+
+		<!-- Page preloader -->
+		<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<!-- Star Wars Canvas -->
+		<canvas id="starfield"></canvas>
+
+		<!-- Overlay -->
+		<div class="global-overlay">
+			<div class="overlay">
+
+			</div>
+		</div>
+
+		<!-- START - Home Part -->
+		<section id="home-wrap">
+
+			<div class="content">
+
+				<!-- Your logo -->
+				<img src="img/makkke.png" alt="" class="brand-logo text-intro opacity-0" />
+
+				<h1 class="text-intro opacity-0"><span class="polyfy-title">The Future is Almost Here...</span></h1>
+
+				<p class="text-intro opacity-0">We Create Creative Digital Solutions and Design Strategies<br />
+																				to Help Our Clients Reach their Goals / Audience</p>
+
+				<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">Notify Me!</a>
+
+			</div> <!-- /. content -->
+		</section>
+		<!-- END - Home Part -->
+
+		<!-- START - Newsletter Popup -->
+		<div id="somedialog" class="dialog">
+
+			<div class="dialog__overlay"></div>
+
+			<div class="dialog__content">
+
+				<div class="dialog-inner">
+
+					<h4>Join Makkke Right Now!</h4>
+
+					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+					<!-- Newsletter Form -->
+					<div id="subscribe">
+
+            <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+                <div class="form-group">
+
+                    <div class="controls">
+
+                    	<!-- Field  -->
+                    	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+                    	<!-- Spinner top left during the submission -->
+                    	<i class="fa fa-spinner opacity-0"></i>
+
+                        <!-- Button -->
+                        <button class="btn btn-lg submit">Get notified</button>
+
+                        <div class="clear"></div>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+						<div class="block-message">
+
+							<div class="message">
+
+								<p class="notify-valid"></p>
+
+							</div>
+
+						</div>
+
+        			</div>
+        			<!-- /. Newsletter Form -->
+
+				</div>
+				<!-- /. dialog-inner -->
+
+				<!-- Button Cross to close the Newsletter Popup -->
+				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
+			</div>
+			<!-- /. dialog__content -->
+
+		</div>
+		<!-- END - Newsletter Popup -->
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="js/velocity.min.js"></script>
+
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="js/velocity.ui.min.js"></script>
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- Star Wars plugin -->
+	<script src="js/starfield.js"></script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>
