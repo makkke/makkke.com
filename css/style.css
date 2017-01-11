@@ -105,7 +105,7 @@ table {
   margin: 0 auto;
 }
 #loading #preloader:after {
-  content: "Legend is loading";
+  content: "Makkke is loading";
   /* Text under the circles */
   position: absolute;
   text-transform: uppercase;
