@@ -193,7 +193,7 @@ function init()
         context=starfield.getContext('2d');
 
         //context.lineCap='round';
-        context.fillStyle = 'rgba(32,35,45,' + opacity + ')'; // Background's color
+        context.fillStyle = 'rgba(21,21,41,' + opacity + ')'; // Background's color
         context.strokeStyle='rgb(241,231,192)'; // Star's color
     }
 
